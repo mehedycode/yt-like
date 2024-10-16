@@ -6,10 +6,6 @@ const loadCates = () => {
     .catch((error) => console.log(error));
 };
 
-// {
-//     "category_id": "1001",
-//     "category": "Music"
-// }
 
 // display cate
 const displayCates = (data) => {
@@ -131,8 +127,6 @@ const displayVideos = (data) => {
     videoContainer.classList.add('grid')
   }
 
-  
-  console.log(data);
   data.forEach((video) => {
     const div = document.createElement("div");
     div.classList = "card card-compact";
