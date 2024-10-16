@@ -22,12 +22,12 @@
       <nav class="flex justify-between items-center">
         <!-- logo -->
         <div class="logo">
-          <img src="assets/Logo.png" alt="" />
+          <img class="w-32" src="assets/Logo.png" alt="" />
         </div>
 
         <!-- search -->
-        <div class="w-96">
-          <label class="input input-bordered flex items-center gap-2">
+        <div class="w-40 md:w-96">
+          <label id="input" class="input input-bordered flex items-center gap-2">
             <input type="text" class="grow" placeholder="Search" />
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -45,9 +45,9 @@
         </div>
 
         <!-- blog -->
-        <div class="blog">
+        <div class="blog hidden md:block">
           <button
-            class="bg-[#FF1F3D] rounded-lg px-5 py-2 text-white text-xl font-medium"
+            class="bg-[#FF1F3D] rounded-lg px-5 py-2 text-white text-xl font-medium "
           >
             SORT
           </button>
@@ -69,7 +69,25 @@
       ></section>
     </main>
 
+
+   <!-- Open the modal using ID.showModal() method -->
+<button class="hidden btn" onclick="my_modal_5.showModal()">open modal</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="modal-container" class="space-y-3">
+
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="relative right-48 bg-[#FF1F3D] px-6 py-2 rounded-lg text-white">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
     <!-- scripts -->
     <script src="js/script.js"></script>
+
   </body>
 </html>

@@ -7,3 +7,9 @@
 html , body {
   font-family: "Inter", sans-serif;
 }
+
+.active{
+background-color: #FF1F3D;
+color: white;
+
+}
