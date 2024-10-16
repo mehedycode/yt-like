@@ -6,6 +6,7 @@
 /* univarsal font */
 html , body {
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 .active{
